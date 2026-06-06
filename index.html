@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAZIGH — ⵎⴰⵣⵉⵖ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">
+      <span class="nav__tifinagh">ⵎⴰⵣⵉⵖ</span>
+      <span class="nav__wordmark">MAZIGH</span>
+    </div>
+    <ul class="nav__links">
+      <li><a href="#collection">Collection</a></li>
+      <li><a href="#roots">Roots</a></li>
+      <li><a href="#story">Story</a></li>
+      <li><a href="#shop" class="nav__cta">Shop Now</a></li>
+    </ul>
+    <button class="nav__burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#collection" onclick="closeMenu()">Collection</a></li>
+      <li><a href="#roots" onclick="closeMenu()">Roots</a></li>
+      <li><a href="#story" onclick="closeMenu()">Story</a></li>
+      <li><a href="#shop" onclick="closeMenu()">Shop Now</a></li>
+    </ul>
+    <div class="mobile-menu__tifinagh">ⵎⴰⵣⵉⵖ</div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__bg">
+      <svg class="hero__pattern" viewBox="0 0 800 800" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <pattern id="amazigh-grid" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+            <!-- Diamond -->
+            <polygon points="40,5 75,40 40,75 5,40" fill="none" stroke="rgba(196,98,45,0.12)" stroke-width="1"/>
+            <!-- Inner cross lines -->
+            <line x1="40" y1="5" x2="40" y2="75" stroke="rgba(196,98,45,0.06)" stroke-width="0.5"/>
+            <line x1="5" y1="40" x2="75" y2="40" stroke="rgba(196,98,45,0.06)" stroke-width="0.5"/>
+            <!-- Corner dots -->
+            <circle cx="40" cy="5" r="1.5" fill="rgba(196,98,45,0.2)"/>
+            <circle cx="75" cy="40" r="1.5" fill="rgba(196,98,45,0.2)"/>
+            <circle cx="40" cy="75" r="1.5" fill="rgba(196,98,45,0.2)"/>
+            <circle cx="5" cy="40" r="1.5" fill="rgba(196,98,45,0.2)"/>
+            <!-- Center -->
+            <circle cx="40" cy="40" r="2" fill="rgba(196,98,45,0.15)"/>
+            <!-- Zigzag top -->
+            <polyline points="0,0 10,10 20,0 30,10 40,0 50,10 60,0 70,10 80,0" fill="none" stroke="rgba(196,98,45,0.06)" stroke-width="0.5"/>
+          </pattern>
+        </defs>
+        <rect width="800" height="800" fill="url(#amazigh-grid)"/>
+      </svg>
+    </div>
+
+    <div class="hero__content">
+      <div class="hero__eyebrow">
+        <span class="hero__line"></span>
+        <span>IMAZIGHEN CULTURE WEAR</span>
+        <span class="hero__line"></span>
+      </div>
+      <h1 class="hero__title">
+        <span class="hero__title-tif">ⵎⴰⵣⵉⵖ</span>
+        <span class="hero__title-main">MAZIGH</span>
+        <span class="hero__title-sub">ROOTS</span>
+      </h1>
+      <p class="hero__desc">
+        Streetwear aus der Tiefe der Amazigh-Seele.<br/>
+        Jedes Stück trägt Jahrtausende.
+      </p>
+      <div class="hero__actions">
+        <a href="#shop" class="btn btn--primary">Shop the Drop</a>
+        <a href="#roots" class="btn btn--ghost">Our Roots</a>
+      </div>
+    </div>
+
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+
+    <!-- Tifinagh floating letters -->
+    <div class="hero__float hero__float--1">ⵣ</div>
+    <div class="hero__float hero__float--2">ⵉ</div>
+    <div class="hero__float hero__float--3">ⵏ</div>
+    <div class="hero__float hero__float--4">ⴰ</div>
+  </section>
+
+  <!-- MARQUEE BAND -->
+  <div class="marquee-band">
+    <div class="marquee-track">
+      <span>ⵉⵎⴰⵣⵉⵖⵏ</span>
+      <span class="sep">◆</span>
+      <span>AMAZIGH PRIDE</span>
+      <span class="sep">◆</span>
+      <span>ⵜⴰⵎⴰⵣⵖⵜ</span>
+      <span class="sep">◆</span>
+      <span>ROOTS &amp; CULTURE</span>
+      <span class="sep">◆</span>
+      <span>ⵙⵉⵏⴰ ⵉⵎⴰⵣⵉⵖⵏ</span>
+      <span class="sep">◆</span>
+      <span>BERBER HERITAGE</span>
+      <span class="sep">◆</span>
+      <span>ⵎⴰⵣⵉⵖ</span>
+      <span class="sep">◆</span>
+      <span>FREE PEOPLE</span>
+      <span class="sep">◆</span>
+      <!-- duplicate for seamless loop -->
+      <span>ⵉⵎⴰⵣⵉⵖⵏ</span>
+      <span class="sep">◆</span>
+      <span>AMAZIGH PRIDE</span>
+      <span class="sep">◆</span>
+      <span>ⵜⴰⵎⴰⵣⵖⵜ</span>
+      <span class="sep">◆</span>
+      <span>ROOTS &amp; CULTURE</span>
+      <span class="sep">◆</span>
+      <span>ⵙⵉⵏⴰ ⵉⵎⴰⵣⵉⵖⵏ</span>
+      <span class="sep">◆</span>
+      <span>BERBER HERITAGE</span>
+      <span class="sep">◆</span>
+      <span>ⵎⴰⵣⵉⵖ</span>
+      <span class="sep">◆</span>
+      <span>FREE PEOPLE</span>
+      <span class="sep">◆</span>
+    </div>
+  </div>
+
+  <!-- ROOTS SECTION -->
+  <section class="roots" id="roots">
+    <div class="roots__container">
+      <div class="roots__left">
+        <div class="roots__motif">
+          <svg viewBox="0 0 300 300" class="roots__svg">
+            <!-- Amazigh Aza symbol -->
+            <g stroke="none" fill="none">
+              <!-- Outer border with geometric pattern -->
+              <rect x="10" y="10" width="280" height="280" stroke="#C4622D" stroke-width="1" fill="none"/>
+              <rect x="20" y="20" width="260" height="260" stroke="#C4622D" stroke-width="0.5" fill="none"/>
+              <!-- Corner diamonds -->
+              <polygon points="10,10 35,35 10,60" fill="rgba(196,98,45,0.15)"/>
+              <polygon points="290,10 265,35 290,60" fill="rgba(196,98,45,0.15)"/>
+              <polygon points="10,290 35,265 10,240" fill="rgba(196,98,45,0.15)"/>
+              <polygon points="290,290 265,265 290,240" fill="rgba(196,98,45,0.15)"/>
+
+              <!-- Central Aza (ⴰ) stylized -->
+              <circle cx="150" cy="150" r="80" stroke="#C4622D" stroke-width="1.5" fill="none"/>
+              <circle cx="150" cy="150" r="60" stroke="#C4622D" stroke-width="0.5" fill="none"/>
+
+              <!-- Vertical bar -->
+              <line x1="150" y1="70" x2="150" y2="230" stroke="#C4622D" stroke-width="2"/>
+              <!-- Horizontal cross bars -->
+              <line x1="110" y1="120" x2="190" y2="120" stroke="#C4622D" stroke-width="1.5"/>
+              <line x1="110" y1="150" x2="190" y2="150" stroke="#C4622D" stroke-width="1.5"/>
+              <line x1="110" y1="180" x2="190" y2="180" stroke="#C4622D" stroke-width="1.5"/>
+
+              <!-- Diamond accent -->
+              <polygon points="150,80 170,150 150,220 130,150" fill="rgba(196,98,45,0.08)" stroke="#C4622D" stroke-width="0.5"/>
+
+              <!-- 4 corner accents -->
+              <line x1="70" y1="150" x2="90" y2="150" stroke="#C4622D" stroke-width="1"/>
+              <line x1="210" y1="150" x2="230" y2="150" stroke="#C4622D" stroke-width="1"/>
+              <line x1="150" y1="70" x2="150" y2="90" stroke="#C4622D" stroke-width="0" />
+              <circle cx="150" cy="150" r="4" fill="#C4622D"/>
+
+              <!-- Zigzag border decoration -->
+              <polyline points="30,30 45,45 60,30 75,45 90,30 105,45 120,30 135,45 150,30 165,45 180,30 195,45 210,30 225,45 240,30 255,45 270,30" fill="none" stroke="rgba(196,98,45,0.3)" stroke-width="0.8"/>
+              <polyline points="30,270 45,255 60,270 75,255 90,270 105,255 120,270 135,255 150,270 165,255 180,270 195,255 210,270 225,255 240,270 255,255 270,270" fill="none" stroke="rgba(196,98,45,0.3)" stroke-width="0.8"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="roots__right">
+        <p class="roots__label">ⵜⴰⵎⴰⵣⵖⵜ — DIE SPRACHE</p>
+        <h2 class="roots__title">Frei.<br/>Stolz.<br/>Ewig.</h2>
+        <p class="roots__text">
+          Imazighen — die freien Menschen. Seit Jahrtausenden verwurzelt im Norden Afrikas, vom Atlasgebirge bis zur Sahara. Unsere Tifinagh-Schrift ist eine der ältesten lebendigen Schriften der Welt.
+        </p>
+        <p class="roots__text">
+          MAZIGH ist kein Label. Es ist ein Statement. Jeder Stich, jedes Motiv erzählt von Widerstand, Identität und Stolz.
+        </p>
+        <div class="roots__alphabet">
+          <span title="Ya">ⵢ</span>
+          <span title="A">ⴰ</span>
+          <span title="B">ⴱ</span>
+          <span title="D">ⴷ</span>
+          <span title="G">ⴳ</span>
+          <span title="H">ⵀ</span>
+          <span title="I">ⵉ</span>
+          <span title="K">ⴽ</span>
+          <span title="L">ⵍ</span>
+          <span title="M">ⵎ</span>
+          <span title="N">ⵏ</span>
+          <span title="R">ⵔ</span>
+          <span title="S">ⵙ</span>
+          <span title="T">ⵜ</span>
+          <span title="U">ⵓ</span>
+          <span title="W">ⵡ</span>
+          <span title="Z">ⵣ</span>
+        </div>
+        <p class="roots__alpha-label">Tifinagh — älteste Schrift Nordafrikas</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TATTOO MOTIFS STRIP -->
+  <section class="motifs">
+    <div class="motifs__header">
+      <h3>AMAZIGH TATTOU INSPIRATION</h3>
+      <p>Traditionelle Motive — neu gedacht</p>
+    </div>
+    <div class="motifs__grid">
+      <div class="motif-card">
+        <svg viewBox="0 0 120 120">
+          <!-- Tazerzit (Cross of Agadez) -->
+          <line x1="60" y1="10" x2="60" y2="110" stroke="#C4622D" stroke-width="2"/>
+          <line x1="10" y1="60" x2="110" y2="60" stroke="#C4622D" stroke-width="2"/>
+          <line x1="25" y1="25" x2="95" y2="95" stroke="#C4622D" stroke-width="1"/>
+          <line x1="95" y1="25" x2="25" y2="95" stroke="#C4622D" stroke-width="1"/>
+          <circle cx="60" cy="60" r="15" fill="none" stroke="#C4622D" stroke-width="1.5"/>
+          <circle cx="60" cy="60" r="4" fill="#C4622D"/>
+          <circle cx="60" cy="20" r="3" fill="#C4622D"/>
+          <circle cx="60" cy="100" r="3" fill="#C4622D"/>
+          <circle cx="20" cy="60" r="3" fill="#C4622D"/>
+          <circle cx="100" cy="60" r="3" fill="#C4622D"/>
+        </svg>
+        <span>Tazerzit</span>
+      </div>
+      <div class="motif-card">
+        <svg viewBox="0 0 120 120">
+          <!-- Diamond chain -->
+          <polygon points="60,10 90,60 60,110 30,60" fill="none" stroke="#C4622D" stroke-width="1.5"/>
+          <polygon points="60,25 80,60 60,95 40,60" fill="none" stroke="#C4622D" stroke-width="1"/>
+          <line x1="60" y1="10" x2="60" y2="110" stroke="#C4622D" stroke-width="0.5"/>
+          <line x1="30" y1="60" x2="90" y2="60" stroke="#C4622D" stroke-width="0.5"/>
+          <circle cx="60" cy="60" r="5" fill="#C4622D"/>
+          <circle cx="60" cy="10" r="2.5" fill="none" stroke="#C4622D" stroke-width="1.5"/>
+          <circle cx="60" cy="110" r="2.5" fill="none" stroke="#C4622D" stroke-width="1.5"/>
+          <circle cx="30" cy="60" r="2.5" fill="none" stroke="#C4622D" stroke-width="1.5"/>
+          <circle cx="90" cy="60" r="2.5" fill="none" stroke="#C4622D" stroke-width="1.5"/>
+        </svg>
+        <span>Losange</span>
+      </div>
+      <div class="motif-card">
+        <svg viewBox="0 0 120 120">
+          <!-- Chevron/zigzag tattou -->
+          <polyline points="10,30 30,10 50,30 70,10 90,30 110,10" fill="none" stroke="#C4622D" stroke-width="2"/>
+          <polyline points="10,60 30,40 50,60 70,40 90,60 110,40" fill="none" stroke="#C4622D" stroke-width="2"/>
+          <polyline points="10,90 30,70 50,90 70,70 90,90 110,70" fill="none" stroke="#C4622D" stroke-width="2"/>
+          <polyline points="10,110 30,90 50,110 70,90 90,110 110,90" fill="none" stroke="#C4622D" stroke-width="1"/>
+          <!-- dots -->
+          <circle cx="30" cy="10" r="2" fill="#C4622D"/>
+          <circle cx="70" cy="10" r="2" fill="#C4622D"/>
+          <circle cx="30" cy="40" r="2" fill="#C4622D"/>
+          <circle cx="70" cy="40" r="2" fill="#C4622D"/>
+        </svg>
+        <span>Chevron</span>
+      </div>
+      <div class="motif-card">
+        <svg viewBox="0 0 120 120">
+          <!-- Eye of protection -->
+          <ellipse cx="60" cy="60" rx="45" ry="25" fill="none" stroke="#C4622D" stroke-width="1.5"/>
+          <circle cx="60" cy="60" r="15" fill="none" stroke="#C4622D" stroke-width="1.5"/>
+          <circle cx="60" cy="60" r="6" fill="#C4622D"/>
+          <!-- Lashes -->
+          <line x1="60" y1="35" x2="60" y2="28" stroke="#C4622D" stroke-width="1"/>
+          <line x1="45" y1="40" x2="40" y2="34" stroke="#C4622D" stroke-width="1"/>
+          <line x1="75" y1="40" x2="80" y2="34" stroke="#C4622D" stroke-width="1"/>
+          <line x1="60" y1="85" x2="60" y2="92" stroke="#C4622D" stroke-width="1"/>
+          <line x1="45" y1="80" x2="40" y2="86" stroke="#C4622D" stroke-width="1"/>
+          <line x1="75" y1="80" x2="80" y2="86" stroke="#C4622D" stroke-width="1"/>
+        </svg>
+        <span>Tit — Auge</span>
+      </div>
+      <div class="motif-card">
+        <svg viewBox="0 0 120 120">
+          <!-- Hand of Fatima Amazigh style -->
+          <path d="M 60 10 L 45 25 L 45 70 L 35 70 L 35 45 L 25 45 L 25 70 L 15 70 L 15 90 Q 15 110 60 110 Q 105 110 105 90 L 105 70 L 95 70 L 95 45 L 85 45 L 85 70 L 75 70 L 75 25 Z" fill="none" stroke="#C4622D" stroke-width="1.5" stroke-linejoin="round"/>
+          <circle cx="60" cy="75" r="8" fill="none" stroke="#C4622D" stroke-width="1"/>
+          <circle cx="60" cy="75" r="3" fill="#C4622D"/>
+        </svg>
+        <span>Afus — Hand</span>
+      </div>
+      <div class="motif-card">
+        <svg viewBox="0 0 120 120">
+          <!-- Tifinagh ⵣ stylized large -->
+          <text x="60" y="85" text-anchor="middle" font-size="90" fill="none" stroke="#C4622D" stroke-width="1" font-family="serif">ⵣ</text>
+          <line x1="20" y1="110" x2="100" y2="10" stroke="#C4622D" stroke-width="0.5" opacity="0.3"/>
+          <circle cx="60" cy="60" r="50" fill="none" stroke="#C4622D" stroke-width="0.5" opacity="0.3"/>
+        </svg>
+        <span>Tifinagh ⵣ</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOP COLLECTION -->
+  <section class="shop" id="shop">
+    <div class="shop__header">
+      <p class="shop__season">SS 2025 — DROP 01</p>
+      <h2 class="shop__title">The Collection</h2>
+      <p class="shop__sub">ⵉⵎⴰⵣⵉⵖⵏ — Wo Geschichte auf Streetwear trifft.</p>
+    </div>
+
+    <div class="products" id="collection">
+
+      <!-- Product 1 -->
+      <article class="product-card" data-index="1">
+        <div class="product-card__img">
+          <div class="product-card__mockup">
+            <div class="mock-tee mock-tee--black">
+              <div class="mock-tee__graphic mock-tee__graphic--tifinagh">ⵎⴰⵣⵉⵖ</div>
+            </div>
+          </div>
+          <div class="product-card__badge">NEW</div>
+          <div class="product-card__overlay">
+            <button class="btn btn--white btn--sm">Quick Add</button>
+          </div>
+        </div>
+        <div class="product-card__info">
+          <div class="product-card__top">
+            <span class="product-card__cat">Oversized Tee</span>
+            <span class="product-card__tag">ⵎⴰⵣⵉⵖ</span>
+          </div>
+          <h3 class="product-card__name">TIFINAGH SCRIPT TEE</h3>
+          <p class="product-card__desc">Oversized Tee in Washed Black. Tifinagh-Schrift handgestickert auf der Brust. 100% Bio-Baumwolle.</p>
+          <div class="product-card__footer">
+            <span class="product-card__price">€ 69,00</span>
+            <div class="product-card__sizes">
+              <span>XS</span><span>S</span><span class="active">M</span><span>L</span><span>XL</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 2 -->
+      <article class="product-card" data-index="2">
+        <div class="product-card__img">
+          <div class="product-card__mockup">
+            <div class="mock-hoodie mock-hoodie--sand">
+              <div class="mock-hoodie__graphic">
+                <svg viewBox="0 0 100 60">
+                  <polygon points="50,5 95,55 5,55" fill="none" stroke="#0a0a0a" stroke-width="2"/>
+                  <polygon points="50,18 82,55 18,55" fill="none" stroke="#0a0a0a" stroke-width="1"/>
+                  <line x1="50" y1="5" x2="50" y2="55" stroke="#0a0a0a" stroke-width="1"/>
+                  <circle cx="50" cy="30" r="5" fill="#0a0a0a"/>
+                </svg>
+                <span>ROOTS</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-card__badge product-card__badge--terracotta">LIMITED</div>
+          <div class="product-card__overlay">
+            <button class="btn btn--white btn--sm">Quick Add</button>
+          </div>
+        </div>
+        <div class="product-card__info">
+          <div class="product-card__top">
+            <span class="product-card__cat">Hoodie</span>
+            <span class="product-card__tag">ⴰⵣⵔⴰⵡ</span>
+          </div>
+          <h3 class="product-card__name">ATLAS HOODIE</h3>
+          <p class="product-card__desc">Heavy-Weight Hoodie in Desert Sand. Amazigh Dreieck-Motiv als Siebdruck. Brushed Fleece Innenseite.</p>
+          <div class="product-card__footer">
+            <span class="product-card__price">€ 119,00</span>
+            <div class="product-card__sizes">
+              <span>S</span><span>M</span><span class="active">L</span><span>XL</span><span>XXL</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 3 -->
+      <article class="product-card" data-index="3">
+        <div class="product-card__img">
+          <div class="product-card__mockup">
+            <div class="mock-cap mock-cap--terracotta">
+              <div class="mock-cap__graphic">ⵣ</div>
+            </div>
+          </div>
+          <div class="product-card__overlay">
+            <button class="btn btn--white btn--sm">Quick Add</button>
+          </div>
+        </div>
+        <div class="product-card__info">
+          <div class="product-card__top">
+            <span class="product-card__cat">Headwear</span>
+            <span class="product-card__tag">ⵉⴳⵓⴷⴰ</span>
+          </div>
+          <h3 class="product-card__name">TIFINAGH 6-PANEL CAP</h3>
+          <p class="product-card__desc">Structured 6-Panel in Terracotta. Tifinagh ⵣ gestickt, unstrukturierter Schirm. One Size, adjustable.</p>
+          <div class="product-card__footer">
+            <span class="product-card__price">€ 49,00</span>
+            <div class="product-card__sizes">
+              <span class="active">ONE SIZE</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 4 -->
+      <article class="product-card" data-index="4">
+        <div class="product-card__img">
+          <div class="product-card__mockup">
+            <div class="mock-longsleeve mock-longsleeve--charcoal">
+              <div class="mock-longsleeve__graphic">
+                <svg viewBox="0 0 120 80">
+                  <!-- Amazigh rug pattern -->
+                  <rect x="5" y="5" width="110" height="70" fill="none" stroke="#C4622D" stroke-width="1"/>
+                  <!-- Zigzag rows -->
+                  <polyline points="5,20 15,10 25,20 35,10 45,20 55,10 65,20 75,10 85,20 95,10 105,20 115,10" fill="none" stroke="#C4622D" stroke-width="1.5"/>
+                  <polyline points="5,40 15,30 25,40 35,30 45,40 55,30 65,40 75,30 85,40 95,30 105,40 115,30" fill="none" stroke="#C4622D" stroke-width="1.5"/>
+                  <polyline points="5,60 15,50 25,60 35,50 45,60 55,50 65,60 75,50 85,60 95,50 105,60 115,50" fill="none" stroke="#C4622D" stroke-width="1.5"/>
+                  <polyline points="5,75 15,65 25,75 35,65 45,75 55,65 65,75 75,65 85,75 95,65 105,75 115,65" fill="none" stroke="#C4622D" stroke-width="1.5"/>
+                  <!-- Diamonds in between -->
+                  <polygon points="60,28 70,40 60,52 50,40" fill="none" stroke="#C4622D" stroke-width="1"/>
+                  <circle cx="60" cy="40" r="3" fill="#C4622D"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="product-card__badge">BESTSELLER</div>
+          <div class="product-card__overlay">
+            <button class="btn btn--white btn--sm">Quick Add</button>
+          </div>
+        </div>
+        <div class="product-card__info">
+          <div class="product-card__top">
+            <span class="product-card__cat">Longsleeve</span>
+            <span class="product-card__tag">ⴰⵣⵣⵓⵍ</span>
+          </div>
+          <h3 class="product-card__name">ZELLIJ LONGSLEEVE</h3>
+          <p class="product-card__desc">Slim-Fit Longsleeve in Washed Charcoal. Amazigh Teppichmuster, aus Kabylei inspiriert. Premium Jersey.</p>
+          <div class="product-card__footer">
+            <span class="product-card__price">€ 79,00</span>
+            <div class="product-card__sizes">
+              <span>XS</span><span class="active">S</span><span>M</span><span>L</span><span>XL</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 5 -->
+      <article class="product-card" data-index="5">
+        <div class="product-card__img">
+          <div class="product-card__mockup">
+            <div class="mock-tee mock-tee--cream">
+              <div class="mock-tee__graphic mock-tee__graphic--tattou">
+                <svg viewBox="0 0 80 100" width="80" height="100">
+                  <!-- Full chest tattou design -->
+                  <circle cx="40" cy="30" r="20" fill="none" stroke="#0a0a0a" stroke-width="1.5"/>
+                  <polygon points="40,10 60,30 40,50 20,30" fill="none" stroke="#0a0a0a" stroke-width="1"/>
+                  <line x1="40" y1="10" x2="40" y2="100" stroke="#0a0a0a" stroke-width="1"/>
+                  <line x1="20" y1="30" x2="60" y2="30" stroke="#0a0a0a" stroke-width="1"/>
+                  <circle cx="40" cy="30" r="5" fill="#0a0a0a"/>
+                  <!-- Wings -->
+                  <path d="M 20,30 Q 5,20 10,50 Q 15,35 25,40" fill="none" stroke="#0a0a0a" stroke-width="1"/>
+                  <path d="M 60,30 Q 75,20 70,50 Q 65,35 55,40" fill="none" stroke="#0a0a0a" stroke-width="1"/>
+                  <!-- Lower decoration -->
+                  <polyline points="25,60 40,50 55,60" fill="none" stroke="#0a0a0a" stroke-width="1"/>
+                  <polyline points="25,70 40,60 55,70" fill="none" stroke="#0a0a0a" stroke-width="1"/>
+                  <polyline points="30,80 40,72 50,80" fill="none" stroke="#0a0a0a" stroke-width="1"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="product-card__badge product-card__badge--terracotta">DROP</div>
+          <div class="product-card__overlay">
+            <button class="btn btn--white btn--sm">Quick Add</button>
+          </div>
+        </div>
+        <div class="product-card__info">
+          <div class="product-card__top">
+            <span class="product-card__cat">Tee</span>
+            <span class="product-card__tag">ⵜⴰⴱⵔⵔⴰⵜ</span>
+          </div>
+          <h3 class="product-card__name">TATTOU CHEST TEE</h3>
+          <p class="product-card__desc">Relaxed-Fit in Vintage Cream. Amazigh Brustmotiv — inspiriert von traditionellen Kabylischen Tattoos. Garment-dyed.</p>
+          <div class="product-card__footer">
+            <span class="product-card__price">€ 74,00</span>
+            <div class="product-card__sizes">
+              <span>XS</span><span>S</span><span>M</span><span class="active">L</span><span>XL</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 6 -->
+      <article class="product-card" data-index="6">
+        <div class="product-card__img">
+          <div class="product-card__mockup">
+            <div class="mock-sweat mock-sweat--olive">
+              <div class="mock-sweat__graphic">
+                <div class="mock-sweat__text">IMAZIGHEN</div>
+                <div class="mock-sweat__tif">ⵉⵎⴰⵣⵉⵖⵏ</div>
+              </div>
+            </div>
+          </div>
+          <div class="product-card__overlay">
+            <button class="btn btn--white btn--sm">Quick Add</button>
+          </div>
+        </div>
+        <div class="product-card__info">
+          <div class="product-card__top">
+            <span class="product-card__cat">Crewneck</span>
+            <span class="product-card__tag">ⴰⵎⴰⵣⵉⵖ</span>
+          </div>
+          <h3 class="product-card__name">IMAZIGHEN CREW</h3>
+          <p class="product-card__desc">Midweight Crewneck in Washed Olive. Tifinagh + Latein Stickerei auf dem Rücken. Dropped Shoulders.</p>
+          <div class="product-card__footer">
+            <span class="product-card__price">€ 109,00</span>
+            <div class="product-card__sizes">
+              <span>S</span><span class="active">M</span><span>L</span><span>XL</span><span>XXL</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="shop__cta">
+      <a href="#" class="btn btn--primary btn--lg">Alle Produkte ansehen</a>
+    </div>
+  </section>
+
+  <!-- STORY SECTION -->
+  <section class="story" id="story">
+    <div class="story__bg-text">MAZIGH</div>
+    <div class="story__container">
+      <div class="story__content">
+        <span class="story__label">ⵜⴰⵎⴰⵣⵖⵜ — DIE GESCHICHTE</span>
+        <h2 class="story__title">Die Freien.<br/>Immer.</h2>
+        <p class="story__text">
+          Das Wort <em>Amazigh</em> bedeutet "freier Mensch". Imazighen sind das Urvolk Nordafrikas — Kabylei, Chaoui, Touareg, Rifler, Chleuh. Ihre Kultur, ihre Tifinagh-Schrift und ihre Tattous sind Zeugnisse einer Zivilisation, die keine Kolonisierung auslöschen konnte.
+        </p>
+        <p class="story__text">
+          MAZIGH wurde gegründet, um diese Identität zu feiern. Nicht als Museum — als lebendige Kultur, die Streetwear prägt.
+        </p>
+        <blockquote class="story__quote">
+          "ⵎⴰⵣⵉⵖ — ⵜⴰⵎⴰⵣⵖⵜ ⵜⴻⴷⴷⵓ"<br/>
+          <cite>Amazigh — Die Kultur lebt weiter</cite>
+        </blockquote>
+      </div>
+      <div class="story__visual">
+        <div class="story__box">
+          <div class="story__box-inner">
+            <svg viewBox="0 0 200 200" class="story__icon">
+              <!-- Full ornamental Amazigh design -->
+              <rect x="5" y="5" width="190" height="190" fill="none" stroke="#C4622D" stroke-width="0.8"/>
+              <!-- Aza symbol enlarged -->
+              <circle cx="100" cy="100" r="70" fill="none" stroke="#C4622D" stroke-width="1"/>
+              <line x1="100" y1="30" x2="100" y2="170" stroke="#C4622D" stroke-width="2"/>
+              <line x1="60" y1="70" x2="140" y2="70" stroke="#C4622D" stroke-width="1.5"/>
+              <line x1="60" y1="100" x2="140" y2="100" stroke="#C4622D" stroke-width="1.5"/>
+              <line x1="60" y1="130" x2="140" y2="130" stroke="#C4622D" stroke-width="1.5"/>
+              <!-- Outer decoration -->
+              <polygon points="100,5 195,100 100,195 5,100" fill="none" stroke="#C4622D" stroke-width="0.5" stroke-dasharray="4,4"/>
+              <circle cx="100" cy="100" r="8" fill="#C4622D"/>
+              <!-- Corner ornaments -->
+              <circle cx="5" cy="5" r="3" fill="#C4622D" opacity="0.5"/>
+              <circle cx="195" cy="5" r="3" fill="#C4622D" opacity="0.5"/>
+              <circle cx="5" cy="195" r="3" fill="#C4622D" opacity="0.5"/>
+              <circle cx="195" cy="195" r="3" fill="#C4622D" opacity="0.5"/>
+            </svg>
+            <div class="story__box-label">AZA — Das Symbol der Amazigh</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Values row -->
+    <div class="values">
+      <div class="value">
+        <div class="value__symbol">ⵎ</div>
+        <h4>Identität</h4>
+        <p>Jedes Stück ist ein Bekenntnis zu Amazigh-Kultur und Geschichte</p>
+      </div>
+      <div class="value">
+        <div class="value__symbol">ⴰ</div>
+        <h4>Qualität</h4>
+        <p>Premium Materialien, hergestellt mit Respekt für Handwerk und Erde</p>
+      </div>
+      <div class="value">
+        <div class="value__symbol">ⵣ</div>
+        <h4>Gemeinschaft</h4>
+        <p>Ein Teil jedes Verkaufs geht an Amazigh-Kulturprojekte weltweit</p>
+      </div>
+      <div class="value">
+        <div class="value__symbol">ⵉ</div>
+        <h4>Freiheit</h4>
+        <p>Imazighen — die freien Menschen. Das ist der Kern von allem.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <div class="newsletter__pattern">
+      <svg viewBox="0 0 600 100" preserveAspectRatio="none">
+        <polyline points="0,50 30,20 60,50 90,20 120,50 150,20 180,50 210,20 240,50 270,20 300,50 330,20 360,50 390,20 420,50 450,20 480,50 510,20 540,50 570,20 600,50" fill="none" stroke="rgba(196,98,45,0.3)" stroke-width="1"/>
+        <polyline points="0,70 30,40 60,70 90,40 120,70 150,40 180,70 210,40 240,70 270,40 300,70 330,40 360,70 390,40 420,70 450,40 480,70 510,40 540,70 570,40 600,70" fill="none" stroke="rgba(196,98,45,0.15)" stroke-width="1"/>
+      </svg>
+    </div>
+    <div class="newsletter__content">
+      <span class="newsletter__tif">ⵜⴰⵙⴷⴰⵡⵉⵜ</span>
+      <h2>Bleib nah an den Wurzeln.</h2>
+      <p>Neue Drops, Kulturstories und Exklusiv-Zugänge — direkt in dein Postfach.</p>
+      <form class="newsletter__form" onsubmit="handleSubscribe(event)">
+        <input type="email" placeholder="deine@email.com" required />
+        <button type="submit" class="btn btn--primary">Einschreiben</button>
+      </form>
+      <p class="newsletter__note">Kein Spam. Nur echte Inhalte.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <span class="footer__tif">ⵎⴰⵣⵉⵖ</span>
+          <span class="footer__name">MAZIGH</span>
+        </div>
+        <p class="footer__tagline">Imazighen Culture Wear<br/>Roots. Pride. Identity.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34v-7a8.16 8.16 0 004.77 1.52V6.42a4.85 4.85 0 01-1-.27z"/></svg>
+          </a>
+          <a href="#" aria-label="Pinterest">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.65 7.86 6.39 9.29-.09-.78-.17-1.98.04-2.83.18-.77 1.22-5.17 1.22-5.17s-.31-.62-.31-1.54c0-1.45.84-2.53 1.88-2.53.89 0 1.32.67 1.32 1.47 0 .9-.57 2.24-.86 3.48-.25 1.04.51 1.88 1.53 1.88 1.83 0 3.06-2.33 3.06-5.09 0-2.1-1.42-3.67-3.98-3.67-2.9 0-4.7 2.17-4.7 4.59 0 .83.24 1.42.62 1.87.17.2.19.28.13.51-.04.17-.14.58-.18.74-.06.24-.24.32-.44.23-1.25-.51-1.83-1.89-1.83-3.43 0-2.54 2.14-5.6 6.39-5.6 3.44 0 5.72 2.49 5.72 5.17 0 3.54-1.97 6.19-4.87 6.19-.97 0-1.89-.52-2.2-1.11l-.6 2.31c-.22.83-.8 1.86-1.19 2.49.9.28 1.84.43 2.82.43 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__links">
+        <div class="footer__col">
+          <h5>Shop</h5>
+          <ul>
+            <li><a href="#">Tees</a></li>
+            <li><a href="#">Hoodies</a></li>
+            <li><a href="#">Headwear</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Lookbook</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Culture</h5>
+          <ul>
+            <li><a href="#">Unsere Geschichte</a></li>
+            <li><a href="#">Tifinagh</a></li>
+            <li><a href="#">Amazigh Tattous</a></li>
+            <li><a href="#">Imazighen</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Info</h5>
+          <ul>
+            <li><a href="#">Über MAZIGH</a></li>
+            <li><a href="#">Größentabelle</a></li>
+            <li><a href="#">Versand & Rückgabe</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li><a href="#">Impressum</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 MAZIGH — ⵎⴰⵣⵉⵖ. Alle Rechte vorbehalten.</p>
+      <p class="footer__pride">Made with pride. <span class="footer__heart">ⵉⵎⴰⵣⵉⵖⵏ</span></p>
+    </div>
+  </footer>
+
+  <!-- CART TOAST -->
+  <div class="toast" id="toast">
+    <span>✓ Zum Warenkorb hinzugefügt</span>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
